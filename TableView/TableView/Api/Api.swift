@@ -12,6 +12,11 @@ class ApiConstants {
     // Local server
     static let serverPath = "http://localhost:3000/"
     
+    // local users
+    static let userPath = serverPath + "users"
+    static let userPathURL = URL(string: userPath)
+
+    
     // posts
     static let postsPath = serverPath + "posts"
     static let postsPathURL = URL(string: postsPath)

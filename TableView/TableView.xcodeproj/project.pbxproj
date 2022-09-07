@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		5749B4E828C90BCB008CCE31 /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5749B4E728C90BCB008CCE31 /* PhotoCollectionViewCell.swift */; };
 		5749B4EB28C90F41008CCE31 /* CacheManagers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5749B4EA28C90F41008CCE31 /* CacheManagers.swift */; };
+		5749B4EE28C92586008CCE31 /* MapsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5749B4ED28C92586008CCE31 /* MapsVC.swift */; };
 		574FCB3D28C8DA5A00C6C6EF /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574FCB3C28C8DA5A00C6C6EF /* NetworkService.swift */; };
 		574FCB4028C8F6F300C6C6EF /* AlbomsAndPhotos.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 574FCB3F28C8F6F300C6C6EF /* AlbomsAndPhotos.storyboard */; };
 		574FCB4228C9011200C6C6EF /* AlbomsTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574FCB4128C9011200C6C6EF /* AlbomsTVC.swift */; };
@@ -41,6 +42,7 @@
 /* Begin PBXFileReference section */
 		5749B4E728C90BCB008CCE31 /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
 		5749B4EA28C90F41008CCE31 /* CacheManagers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheManagers.swift; sourceTree = "<group>"; };
+		5749B4ED28C92586008CCE31 /* MapsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapsVC.swift; sourceTree = "<group>"; };
 		574FCB3C28C8DA5A00C6C6EF /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		574FCB3F28C8F6F300C6C6EF /* AlbomsAndPhotos.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AlbomsAndPhotos.storyboard; sourceTree = "<group>"; };
 		574FCB4128C9011200C6C6EF /* AlbomsTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbomsTVC.swift; sourceTree = "<group>"; };
@@ -102,6 +104,14 @@
 			path = Managers;
 			sourceTree = "<group>";
 		};
+		5749B4EC28C9254E008CCE31 /* Maps */ = {
+			isa = PBXGroup;
+			children = (
+				5749B4ED28C92586008CCE31 /* MapsVC.swift */,
+			);
+			path = Maps;
+			sourceTree = "<group>";
+		};
 		574FCB3E28C8F69100C6C6EF /* AlbomsAndPhotos */ = {
 			isa = PBXGroup;
 			children = (
@@ -135,6 +145,7 @@
 			isa = PBXGroup;
 			children = (
 				5749B4E928C90F27008CCE31 /* Managers */,
+				5749B4EC28C9254E008CCE31 /* Maps */,
 				57FAB95F28C8BEB60030AF38 /* Api */,
 				57FAB96228C8BF1D0030AF38 /* Models */,
 				57FAB96528C8BFAA0030AF38 /* Controllers */,
@@ -389,6 +400,7 @@
 				57FAB97528C8C3450030AF38 /* PostsTableViewController.swift in Sources */,
 				57FAB97928C8C3F20030AF38 /* CommentsTableViewController.swift in Sources */,
 				574FCB4628C9016E00C6C6EF /* PhotoVC.swift in Sources */,
+				5749B4EE28C92586008CCE31 /* MapsVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

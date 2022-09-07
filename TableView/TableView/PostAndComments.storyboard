@@ -185,7 +185,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Map"/>
                                 <connections>
-                                    <segue destination="BDE-aE-gX9" kind="show" id="Kf8-Wg-fHv"/>
+                                    <action selector="mapAction" destination="W2x-Hj-We2" eventType="touchUpInside" id="Jge-Us-O0k"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -210,16 +210,17 @@
             </objects>
             <point key="canvasLocation" x="3476.811594202899" y="112.5"/>
         </scene>
-        <!--View Controller-->
+        <!--MapsVC-->
         <scene sceneID="F4x-5g-949">
             <objects>
-                <viewController id="BDE-aE-gX9" sceneMemberID="viewController">
+                <placeholder placeholderIdentifier="IBFirstResponder" id="upz-UR-DLj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewController storyboardIdentifier="MapsVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BDE-aE-gX9" customClass="MapsVC" customModule="TableView" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="DaN-lK-GMw">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Z48-HB-hM8">
-                                <rect key="frame" x="0.0" y="44" width="414" height="798"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                             </mapView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ewG-Ps-2O9"/>
@@ -234,8 +235,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Jjg-SJ-xUQ"/>
+                    <connections>
+                        <outlet property="mapsView" destination="Z48-HB-hM8" id="9eT-bg-w56"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="upz-UR-DLj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4210.144927536232" y="112.5"/>
         </scene>

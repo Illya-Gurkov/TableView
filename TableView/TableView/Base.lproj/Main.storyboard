@@ -12,7 +12,7 @@
         <!--Actions-->
         <scene sceneID="TIz-xA-QC9">
             <objects>
-                <collectionViewController id="DGg-FN-Zez" customClass="ActionsCollectionViewController" customModule="TableViewCell" customModuleProvider="target" sceneMemberID="viewController">
+                <collectionViewController id="DGg-FN-Zez" customClass="ActionsCollectionViewController" customModule="TableView" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="HOB-7H-mqO">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -24,7 +24,7 @@
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ActionCell" id="dIh-Zh-0zp" customClass="ActionCollectionViewCell" customModule="TableViewCell" customModuleProvider="target">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ActionCell" id="dIh-Zh-0zp" customClass="ActionCollectionViewCell" customModule="TableView" customModuleProvider="target">
                                 <rect key="frame" x="10.5" y="0.0" width="393" height="166"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="ZoP-oS-103">
@@ -75,7 +75,7 @@
         <!--Pictures-->
         <scene sceneID="z1O-lp-lui">
             <objects>
-                <viewController id="kLd-6u-2cM" customClass="ImageViewController" customModule="TableViewCell" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="kLd-6u-2cM" customClass="ImageViewController" customModule="TableView" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sgl-pa-lQK">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -112,7 +112,7 @@
         <!--User-->
         <scene sceneID="1Wb-CP-Ono">
             <objects>
-                <tableViewController id="Fcz-Pl-SKH" customClass="UserTVC" customModule="TableViewCell" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="Fcz-Pl-SKH" customClass="UserTVC" customModule="TableView" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="SV9-Qh-gt3">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -157,7 +157,7 @@
         <!--User Detail View Controller-->
         <scene sceneID="djM-ca-6qH">
             <objects>
-                <viewController storyboardIdentifier="UserDetailViewController" id="aip-pa-Y14" customClass="UserDetailViewController" customModule="TableViewCell" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="UserDetailViewController" id="aip-pa-Y14" customClass="UserDetailViewController" customModule="TableView" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="idN-vu-y8g">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

@@ -56,6 +56,14 @@ class UserDetailViewController: UIViewController {
         navigationController?.pushViewController(vc, animated: true)
     }
     
+    
+    @IBAction func location() {let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "MapsVC") as! MapsVC
+        vc.user = user
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    
     @IBAction func toDoButton() {
         
     }
