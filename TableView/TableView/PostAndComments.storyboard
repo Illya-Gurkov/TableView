@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Posts Table View Controller-->
+        <!--Posts-->
         <scene sceneID="jn6-7j-13O">
             <objects>
-                <tableViewController storyboardIdentifier="PostsTableViewController" id="AQK-jg-vsZ" customClass="PostsTableViewController" customModule="TableViewCell" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="PostsTableViewController" id="AQK-jg-vsZ" customClass="PostsTableViewController" customModule="TableView" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="Pzz-1P-C9C">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -47,28 +47,36 @@
                             <outlet property="delegate" destination="AQK-jg-vsZ" id="T8S-rv-oVJ"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" title="Posts" id="Cla-Jx-lF9">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="frW-8Q-WV5">
+                            <connections>
+                                <segue destination="fij-f1-6fY" kind="show" identifier="AddNewPostSegue" id="abw-sp-ibz"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hkE-cc-miT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-459" y="113"/>
+            <point key="canvasLocation" x="1360.8695652173915" y="112.5"/>
         </scene>
         <!--Detail Posts View Controller-->
         <scene sceneID="NlW-uh-ldX">
             <objects>
-                <viewController storyboardIdentifier="DetailPostsViewController" id="knn-1B-NAu" customClass="DetailPostsViewController" customModule="TableViewCell" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DetailPostsViewController" id="knn-1B-NAu" customClass="DetailPostsViewController" customModule="TableView" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="JBb-pH-ell">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Posts Full Text" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3RW-ke-U5y">
-                                <rect key="frame" x="40" y="94" width="334" height="20.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3RW-ke-U5y">
+                                <rect key="frame" x="40" y="94" width="334" height="0.0"/>
                                 <color key="backgroundColor" systemColor="systemGray5Color"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VUu-IB-JNZ">
-                                <rect key="frame" x="120" y="164.5" width="174" height="31"/>
+                                <rect key="frame" x="120" y="144" width="174" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Comments"/>
                                 <connections>
@@ -94,12 +102,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xGW-nw-qKM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="239" y="113"/>
+            <point key="canvasLocation" x="2068.1159420289855" y="555.80357142857144"/>
         </scene>
         <!--Comments Table View Controller-->
         <scene sceneID="jNB-re-c5p">
             <objects>
-                <tableViewController storyboardIdentifier="CommentsTableViewController" id="5SW-tU-zVL" customClass="CommentsTableViewController" customModule="TableViewCell" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="CommentsTableViewController" id="5SW-tU-zVL" customClass="CommentsTableViewController" customModule="TableView" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="Peh-0D-YR7">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -138,12 +146,12 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eSy-xi-FMZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="930" y="113"/>
+            <point key="canvasLocation" x="2749.275362318841" y="112.5"/>
         </scene>
         <!--Detail Comments View Controller-->
         <scene sceneID="79W-55-Wxf">
             <objects>
-                <viewController storyboardIdentifier="DetailCommentsViewController" id="W2x-Hj-We2" customClass="DetailCommentsViewController" customModule="TableViewCell" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DetailCommentsViewController" id="W2x-Hj-We2" customClass="DetailCommentsViewController" customModule="TableView" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="G0w-QW-jEf">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -200,7 +208,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ive-Mz-ZtC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1659" y="113"/>
+            <point key="canvasLocation" x="3476.811594202899" y="112.5"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="F4x-5g-949">
@@ -229,10 +237,93 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="upz-UR-DLj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2391" y="113"/>
+            <point key="canvasLocation" x="4210.144927536232" y="112.5"/>
+        </scene>
+        <!--New PostVC-->
+        <scene sceneID="vsu-sV-9cX">
+            <objects>
+                <viewController id="fij-f1-6fY" customClass="NewPostVC" customModule="TableView" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tw4-UA-FRK">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="h5W-eg-ZTJ">
+                                <rect key="frame" x="50" y="144" width="314" height="598"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="104" translatesAutoresizingMaskIntoConstraints="NO" id="Fwv-b9-8IJ">
+                                        <rect key="frame" x="0.0" y="0.0" width="314" height="327"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MKE-YX-9iM">
+                                                <rect key="frame" x="0.0" y="0.0" width="314" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="mME-El-1sF"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="gs7-MX-7kj">
+                                                <rect key="frame" x="0.0" y="154" width="314" height="173"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <color key="textColor" systemColor="labelColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="71" translatesAutoresizingMaskIntoConstraints="NO" id="pfR-VV-yIX">
+                                        <rect key="frame" x="0.0" y="427" width="314" height="171"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="una-rr-GGh">
+                                                <rect key="frame" x="0.0" y="0.0" width="314" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="gZM-z5-Fy9"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="tinted" title="Post with URLSession"/>
+                                                <connections>
+                                                    <action selector="postURLSession" destination="fij-f1-6fY" eventType="touchUpInside" id="bkJ-ts-8n5"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DeE-Ex-ioh">
+                                                <rect key="frame" x="0.0" y="121" width="314" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="f7v-wL-S2C"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="Post with Alamofire"/>
+                                                <connections>
+                                                    <action selector="postAlamofire" destination="fij-f1-6fY" eventType="touchUpInside" id="FHZ-ou-PSA"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="RQR-tz-MoX"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="h5W-eg-ZTJ" firstAttribute="leading" secondItem="RQR-tz-MoX" secondAttribute="leading" constant="50" id="GDT-oj-LBi"/>
+                            <constraint firstItem="h5W-eg-ZTJ" firstAttribute="top" secondItem="RQR-tz-MoX" secondAttribute="top" constant="100" id="aB2-yo-FMH"/>
+                            <constraint firstItem="RQR-tz-MoX" firstAttribute="bottom" secondItem="h5W-eg-ZTJ" secondAttribute="bottom" constant="100" id="tPg-Ad-Uka"/>
+                            <constraint firstItem="RQR-tz-MoX" firstAttribute="trailing" secondItem="h5W-eg-ZTJ" secondAttribute="trailing" constant="50" id="wkW-nk-fle"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="f35-k2-0O9"/>
+                    <connections>
+                        <outlet property="bodyTV" destination="gs7-MX-7kj" id="I4C-Do-iwD"/>
+                        <outlet property="titleTF" destination="MKE-YX-9iM" id="CF4-tv-O5m"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Kr-Mj-iJG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2068.1159420289855" y="-391.07142857142856"/>
         </scene>
     </scenes>
     <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

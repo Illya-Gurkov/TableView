@@ -8,7 +8,7 @@
 import UIKit
 
 class CommentsTableViewController: UITableViewController {
-
+    var postId: Int?
     var user: User?
     var posts: Post?
     var comment: [Comment] = []

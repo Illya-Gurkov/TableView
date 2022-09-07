@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5749B4E828C90BCB008CCE31 /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5749B4E728C90BCB008CCE31 /* PhotoCollectionViewCell.swift */; };
+		5749B4EB28C90F41008CCE31 /* CacheManagers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5749B4EA28C90F41008CCE31 /* CacheManagers.swift */; };
+		574FCB3D28C8DA5A00C6C6EF /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574FCB3C28C8DA5A00C6C6EF /* NetworkService.swift */; };
+		574FCB4028C8F6F300C6C6EF /* AlbomsAndPhotos.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 574FCB3F28C8F6F300C6C6EF /* AlbomsAndPhotos.storyboard */; };
+		574FCB4228C9011200C6C6EF /* AlbomsTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574FCB4128C9011200C6C6EF /* AlbomsTVC.swift */; };
+		574FCB4428C9013D00C6C6EF /* PhotosCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574FCB4328C9013D00C6C6EF /* PhotosCVC.swift */; };
+		574FCB4628C9016E00C6C6EF /* PhotoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574FCB4528C9016E00C6C6EF /* PhotoVC.swift */; };
 		57FAB94B28C8BD120030AF38 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FAB94A28C8BD120030AF38 /* AppDelegate.swift */; };
 		57FAB94D28C8BD120030AF38 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FAB94C28C8BD120030AF38 /* SceneDelegate.swift */; };
 		57FAB95228C8BD120030AF38 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57FAB95028C8BD120030AF38 /* Main.storyboard */; };
@@ -24,9 +31,21 @@
 		57FAB97728C8C38F0030AF38 /* DetailPostsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FAB97628C8C38F0030AF38 /* DetailPostsViewController.swift */; };
 		57FAB97928C8C3F20030AF38 /* CommentsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FAB97828C8C3F20030AF38 /* CommentsTableViewController.swift */; };
 		57FAB97B28C8C4440030AF38 /* DetailCommentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FAB97A28C8C4440030AF38 /* DetailCommentsViewController.swift */; };
+		57FAB98328C8CA500030AF38 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 57FAB98228C8CA500030AF38 /* Alamofire */; };
+		57FAB98628C8CAE60030AF38 /* AlamofireImage in Frameworks */ = {isa = PBXBuildFile; productRef = 57FAB98528C8CAE60030AF38 /* AlamofireImage */; };
+		57FAB98928C8CB150030AF38 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 57FAB98828C8CB150030AF38 /* Alamofire */; };
+		57FAB98B28C8CCFD0030AF38 /* NewPostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FAB98A28C8CCFD0030AF38 /* NewPostVC.swift */; };
+		8CB97AD287264FDF2D50C905 /* Pods_TableView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA3353B9D3E8DDD20802E937 /* Pods_TableView.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5749B4E728C90BCB008CCE31 /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
+		5749B4EA28C90F41008CCE31 /* CacheManagers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheManagers.swift; sourceTree = "<group>"; };
+		574FCB3C28C8DA5A00C6C6EF /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		574FCB3F28C8F6F300C6C6EF /* AlbomsAndPhotos.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AlbomsAndPhotos.storyboard; sourceTree = "<group>"; };
+		574FCB4128C9011200C6C6EF /* AlbomsTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbomsTVC.swift; sourceTree = "<group>"; };
+		574FCB4328C9013D00C6C6EF /* PhotosCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosCVC.swift; sourceTree = "<group>"; };
+		574FCB4528C9016E00C6C6EF /* PhotoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoVC.swift; sourceTree = "<group>"; };
 		57FAB94728C8BD120030AF38 /* TableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		57FAB94A28C8BD120030AF38 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		57FAB94C28C8BD120030AF38 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -46,6 +65,10 @@
 		57FAB97628C8C38F0030AF38 /* DetailPostsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPostsViewController.swift; sourceTree = "<group>"; };
 		57FAB97828C8C3F20030AF38 /* CommentsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsTableViewController.swift; sourceTree = "<group>"; };
 		57FAB97A28C8C4440030AF38 /* DetailCommentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCommentsViewController.swift; sourceTree = "<group>"; };
+		57FAB98A28C8CCFD0030AF38 /* NewPostVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPostVC.swift; sourceTree = "<group>"; };
+		5CAC1221843E1A18F659432F /* Pods-TableView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TableView.release.xcconfig"; path = "Target Support Files/Pods-TableView/Pods-TableView.release.xcconfig"; sourceTree = "<group>"; };
+		67C1D1D367B3F4926970803B /* Pods-TableView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TableView.debug.xcconfig"; path = "Target Support Files/Pods-TableView/Pods-TableView.debug.xcconfig"; sourceTree = "<group>"; };
+		AA3353B9D3E8DDD20802E937 /* Pods_TableView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TableView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,17 +76,50 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8CB97AD287264FDF2D50C905 /* Pods_TableView.framework in Frameworks */,
+				57FAB98928C8CB150030AF38 /* Alamofire in Frameworks */,
+				57FAB98328C8CA500030AF38 /* Alamofire in Frameworks */,
+				57FAB98628C8CAE60030AF38 /* AlamofireImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		38C79569955D35E07F75BD79 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AA3353B9D3E8DDD20802E937 /* Pods_TableView.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5749B4E928C90F27008CCE31 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				5749B4EA28C90F41008CCE31 /* CacheManagers.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		574FCB3E28C8F69100C6C6EF /* AlbomsAndPhotos */ = {
+			isa = PBXGroup;
+			children = (
+				574FCB4128C9011200C6C6EF /* AlbomsTVC.swift */,
+				574FCB4328C9013D00C6C6EF /* PhotosCVC.swift */,
+				574FCB4528C9016E00C6C6EF /* PhotoVC.swift */,
+				5749B4E728C90BCB008CCE31 /* PhotoCollectionViewCell.swift */,
+			);
+			path = AlbomsAndPhotos;
+			sourceTree = "<group>";
+		};
 		57FAB93E28C8BD110030AF38 = {
 			isa = PBXGroup;
 			children = (
 				57FAB94928C8BD120030AF38 /* TableView */,
 				57FAB94828C8BD120030AF38 /* Products */,
+				AC73AF8195CE0A5898AF3A04 /* Pods */,
+				38C79569955D35E07F75BD79 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -78,11 +134,14 @@
 		57FAB94928C8BD120030AF38 /* TableView */ = {
 			isa = PBXGroup;
 			children = (
+				5749B4E928C90F27008CCE31 /* Managers */,
 				57FAB95F28C8BEB60030AF38 /* Api */,
 				57FAB96228C8BF1D0030AF38 /* Models */,
 				57FAB96528C8BFAA0030AF38 /* Controllers */,
+				574FCB3E28C8F69100C6C6EF /* AlbomsAndPhotos */,
 				57FAB95E28C8BE1F0030AF38 /* Delegate */,
 				57FAB95028C8BD120030AF38 /* Main.storyboard */,
+				574FCB3F28C8F6F300C6C6EF /* AlbomsAndPhotos.storyboard */,
 				57FAB97228C8C2FB0030AF38 /* PostAndComments.storyboard */,
 				57FAB95328C8BD120030AF38 /* Assets.xcassets */,
 				57FAB95528C8BD120030AF38 /* LaunchScreen.storyboard */,
@@ -104,6 +163,7 @@
 			isa = PBXGroup;
 			children = (
 				57FAB96028C8BEE70030AF38 /* Api.swift */,
+				574FCB3C28C8DA5A00C6C6EF /* NetworkService.swift */,
 			);
 			path = Api;
 			sourceTree = "<group>";
@@ -168,8 +228,18 @@
 			children = (
 				57FAB97428C8C3450030AF38 /* PostsTableViewController.swift */,
 				57FAB97628C8C38F0030AF38 /* DetailPostsViewController.swift */,
+				57FAB98A28C8CCFD0030AF38 /* NewPostVC.swift */,
 			);
 			path = Posts;
+			sourceTree = "<group>";
+		};
+		AC73AF8195CE0A5898AF3A04 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				67C1D1D367B3F4926970803B /* Pods-TableView.debug.xcconfig */,
+				5CAC1221843E1A18F659432F /* Pods-TableView.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -179,15 +249,22 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 57FAB95B28C8BD120030AF38 /* Build configuration list for PBXNativeTarget "TableView" */;
 			buildPhases = (
+				6A868F24BDFCF73624C58E83 /* [CP] Check Pods Manifest.lock */,
 				57FAB94328C8BD120030AF38 /* Sources */,
 				57FAB94428C8BD120030AF38 /* Frameworks */,
 				57FAB94528C8BD120030AF38 /* Resources */,
+				79A69FA98E23C8B3F401EECF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = TableView;
+			packageProductDependencies = (
+				57FAB98228C8CA500030AF38 /* Alamofire */,
+				57FAB98528C8CAE60030AF38 /* AlamofireImage */,
+				57FAB98828C8CB150030AF38 /* Alamofire */,
+			);
 			productName = TableView;
 			productReference = 57FAB94728C8BD120030AF38 /* TableView.app */;
 			productType = "com.apple.product-type.application";
@@ -216,6 +293,11 @@
 				Base,
 			);
 			mainGroup = 57FAB93E28C8BD110030AF38;
+			packageReferences = (
+				57FAB98128C8CA4F0030AF38 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				57FAB98428C8CAE60030AF38 /* XCRemoteSwiftPackageReference "AlamofireImage" */,
+				57FAB98728C8CB150030AF38 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 57FAB94828C8BD120030AF38 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -232,12 +314,55 @@
 			files = (
 				57FAB97328C8C2FB0030AF38 /* PostAndComments.storyboard in Resources */,
 				57FAB95728C8BD120030AF38 /* LaunchScreen.storyboard in Resources */,
+				574FCB4028C8F6F300C6C6EF /* AlbomsAndPhotos.storyboard in Resources */,
 				57FAB95428C8BD120030AF38 /* Assets.xcassets in Resources */,
 				57FAB95228C8BD120030AF38 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6A868F24BDFCF73624C58E83 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TableView-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		79A69FA98E23C8B3F401EECF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TableView/Pods-TableView-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TableView/Pods-TableView-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TableView/Pods-TableView-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		57FAB94328C8BD120030AF38 /* Sources */ = {
@@ -248,15 +373,22 @@
 				57FAB97728C8C38F0030AF38 /* DetailPostsViewController.swift in Sources */,
 				57FAB96128C8BEE70030AF38 /* Api.swift in Sources */,
 				57FAB96F28C8C2150030AF38 /* UserDetailViewController.swift in Sources */,
+				5749B4E828C90BCB008CCE31 /* PhotoCollectionViewCell.swift in Sources */,
 				57FAB94B28C8BD120030AF38 /* AppDelegate.swift in Sources */,
+				574FCB4228C9011200C6C6EF /* AlbomsTVC.swift in Sources */,
 				57FAB96B28C8C1010030AF38 /* ImageViewController.swift in Sources */,
 				57FAB96D28C8C1990030AF38 /* UserTVC.swift in Sources */,
+				57FAB98B28C8CCFD0030AF38 /* NewPostVC.swift in Sources */,
 				57FAB96428C8BF370030AF38 /* UserModels.swift in Sources */,
 				57FAB96928C8C0930030AF38 /* ActionCollectionViewCell.swift in Sources */,
+				5749B4EB28C90F41008CCE31 /* CacheManagers.swift in Sources */,
+				574FCB3D28C8DA5A00C6C6EF /* NetworkService.swift in Sources */,
 				57FAB97B28C8C4440030AF38 /* DetailCommentsViewController.swift in Sources */,
 				57FAB94D28C8BD120030AF38 /* SceneDelegate.swift in Sources */,
+				574FCB4428C9013D00C6C6EF /* PhotosCVC.swift in Sources */,
 				57FAB97528C8C3450030AF38 /* PostsTableViewController.swift in Sources */,
 				57FAB97928C8C3F20030AF38 /* CommentsTableViewController.swift in Sources */,
+				574FCB4628C9016E00C6C6EF /* PhotoVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -398,6 +530,7 @@
 		};
 		57FAB95C28C8BD120030AF38 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 67C1D1D367B3F4926970803B /* Pods-TableView.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -426,6 +559,7 @@
 		};
 		57FAB95D28C8BD120030AF38 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5CAC1221843E1A18F659432F /* Pods-TableView.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -474,6 +608,51 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		57FAB98128C8CA4F0030AF38 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		57FAB98428C8CAE60030AF38 /* XCRemoteSwiftPackageReference "AlamofireImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/AlamofireImage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+		57FAB98728C8CB150030AF38 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		57FAB98228C8CA500030AF38 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 57FAB98128C8CA4F0030AF38 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		57FAB98528C8CAE60030AF38 /* AlamofireImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 57FAB98428C8CAE60030AF38 /* XCRemoteSwiftPackageReference "AlamofireImage" */;
+			productName = AlamofireImage;
+		};
+		57FAB98828C8CB150030AF38 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 57FAB98728C8CB150030AF38 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 57FAB93F28C8BD110030AF38 /* Project object */;
 }

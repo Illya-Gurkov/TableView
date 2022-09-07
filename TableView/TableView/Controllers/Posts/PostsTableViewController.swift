@@ -13,11 +13,8 @@ class PostsTableViewController: UITableViewController {
     var posts: [Post] = []
     var comment: [Comment] = []
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    override func viewWillAppear(_ animated: Bool) {
         fetchPosts()
-        self.navigationItem.rightBarButtonItem = self.editButtonItem
-
     }
 
     // MARK: - Table view data source
@@ -59,10 +56,24 @@ class PostsTableViewController: UITableViewController {
             }
         } .resume()
     }
-
     
-    // MARK: - Table view delegate
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+             if let newPostVC = segue.destination as? NewPostVC {
+                 newPostVC.user = user
+             }
 
+         }
+
+    //MARK: -
+    // MARK: - Table view delegate
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        if let vc = segue.destination as? CommentsTableViewController,
+//           let indexPath = sender as? IndexPath {
+//            let post = posts[indexPath.row]
+//            vc.postId = post.id
+//        } else if let vc = segue.destination as? NewPostVC {
+//            vc.user = user
+//        }
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let posts = posts[indexPath.row]
         let storyboard = UIStoryboard(name: "PostAndComments", bundle: nil)
@@ -70,7 +81,7 @@ class PostsTableViewController: UITableViewController {
         vc.posts = posts
         navigationController?.pushViewController(vc, animated: true)
     }
-    
+
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
         
@@ -81,17 +92,17 @@ class PostsTableViewController: UITableViewController {
     
     // Override to support editing the table view.
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            posts.remove(at: indexPath.row)
-            // Delete the row from the data source
-            tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            let _ = posts[indexPath.section]
-            tableView.insertRows(at: [indexPath], with: .fade)
+        if editingStyle == .delete, let id = posts[indexPath.row].id {
+            NetworkService.deletePost(postID: id) { [weak self] json, error in
+                if json != nil {
+                    self?.posts.remove(at: indexPath.row)
+                    tableView.deleteRows(at: [indexPath], with: .automatic)
+                } else if let error = error {
+                    print(error)
+                }
+            }
         }
-        tableView.reloadData()
     }
-    
 
     /*
     // Override to support rearranging the table view.
