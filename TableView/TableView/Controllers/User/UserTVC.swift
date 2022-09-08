@@ -8,9 +8,8 @@
 import UIKit
 
 class UserTVC: UITableViewController {
-
     var user: [User] = []
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         fetchUsers()
@@ -23,7 +22,6 @@ class UserTVC: UITableViewController {
         user.count
     }
 
-
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "UserCell", for: indexPath)
         cell.textLabel?.text = user[indexPath.row].name
@@ -32,7 +30,6 @@ class UserTVC: UITableViewController {
         return cell
     }
 
-    
     // MARK: - Table view delegate
 
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -53,14 +50,12 @@ class UserTVC: UITableViewController {
             do {
                 self.user = try JSONDecoder().decode([User].self, from: data) // декодируем данные из формата Data в модель (User)
             } catch {
-                print (error)
+                print(error)
             }
             // отправляем данные в главный поток
             DispatchQueue.main.async {
                 self.tableView.reloadData()
             }
-        } .resume()
+        }.resume()
     }
-
 }
-

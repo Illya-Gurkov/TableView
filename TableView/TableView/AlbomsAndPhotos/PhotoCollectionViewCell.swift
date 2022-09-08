@@ -5,17 +5,14 @@
 //  Created by Illya Gurkov on 7.09.22.
 //
 
-import UIKit
-import SwiftyJSON
 import Alamofire
 import AlamofireImage
-
+import SwiftyJSON
+import UIKit
 
 class PhotoCollectionViewCell: UICollectionViewCell {
-    
-    
-    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
-    @IBOutlet weak var photoImage: UIImageView!
+    @IBOutlet var activityIndicator: UIActivityIndicatorView!
+    @IBOutlet var photoImage: UIImageView!
 
     var photo: JSON!
 
@@ -40,4 +37,3 @@ class PhotoCollectionViewCell: UICollectionViewCell {
         }
     }
 }
-

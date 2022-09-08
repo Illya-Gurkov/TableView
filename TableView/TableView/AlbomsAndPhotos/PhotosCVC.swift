@@ -5,11 +5,10 @@
 //  Created by Illya Gurkov on 7.09.22.
 //
 
-import UIKit
-import SwiftyJSON
 import Alamofire
 import AlamofireImage
-
+import SwiftyJSON
+import UIKit
 
 private let reuseIdentifier = "Cell"
 
@@ -17,7 +16,7 @@ class PhotosCVC: UICollectionViewController {
     var user: User!
     var album: JSON!
     var photos: [JSON] = []
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         title = album["title"].string
@@ -31,13 +30,11 @@ class PhotosCVC: UICollectionViewController {
         collectionView.collectionViewLayout = layout
     }
 
-
-
     func getData() {
         if let album = album,
-            let albumId = album["id"].int,
-            let url = URL(string: "https://jsonplaceholder.typicode.com/photos?albumId=\(albumId)") {
-
+           let albumId = album["id"].int,
+           let url = URL(string: "https://jsonplaceholder.typicode.com/photos?albumId=\(albumId)")
+        {
             AF.request(url).responseJSON { response in
                 switch response.result {
                 case .success(let data):
@@ -63,5 +60,4 @@ class PhotosCVC: UICollectionViewController {
         cell.getThumbnail()
         return cell
     }
-    
 }

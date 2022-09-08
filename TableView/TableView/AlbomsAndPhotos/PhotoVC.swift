@@ -5,23 +5,22 @@
 //  Created by Illya Gurkov on 7.09.22.
 //
 
-import UIKit
 import Alamofire
 import AlamofireImage
 import SwiftyJSON
+import UIKit
 
 class PhotoVC: UIViewController {
+    @IBOutlet var imageView: UIImageView!
+    @IBOutlet var activityIndicator: UIActivityIndicatorView!
 
-    @IBOutlet weak var imageView: UIImageView!
-    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
-    
     var photo: JSON!
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         getPhoto()
     }
-    
+
     func getPhoto() {
         if let photoURL = photo["url"].string {
             if let image = CacheManager.shared.imageCache.image(withIdentifier: photoURL) {

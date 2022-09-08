@@ -16,19 +16,15 @@ class CommentsTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         fetchCommentw()
-        
     }
 
     // MARK: - Table view data source
-
-   
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         comment.count
     }
 
-    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let comments = comment[indexPath.row]
         let cell = tableView.dequeueReusableCell(withIdentifier: "CommentsCell", for: indexPath)
@@ -37,7 +33,6 @@ class CommentsTableViewController: UITableViewController {
     
         return cell
     }
-    
     
     // MARK: Func's
     
@@ -54,16 +49,16 @@ class CommentsTableViewController: UITableViewController {
             do {
                 self.comment = try JSONDecoder().decode([Comment].self, from: data) //
             } catch {
-                print (self.comment)
+                print(self.comment)
             }
             // отправляем данные в главный поток
             DispatchQueue.main.async {
                 self.tableView.reloadData()
             }
-        } .resume()
+        }.resume()
     }
 
-     // MARK: - Table view delegate
+    // MARK: - Table view delegate
 
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let comments = comment[indexPath.row]
