@@ -65,6 +65,7 @@ class CommentsTableViewController: UITableViewController {
         let storyboard = UIStoryboard(name: "PostAndComments", bundle: nil)
         let vc = storyboard.instantiateViewController(withIdentifier: "DetailCommentsViewController") as! DetailCommentsViewController
         vc.comments = comments
+        vc.user = user
         navigationController?.pushViewController(vc, animated: true)
     }
 }

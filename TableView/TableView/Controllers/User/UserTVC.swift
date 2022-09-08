@@ -42,7 +42,7 @@ class UserTVC: UITableViewController {
 
     // метод преобразующий стринговый URL адрес в URL
     private func fetchUsers() {
-        guard let url = URL(string: "https://jsonplaceholder.typicode.com/users") else { return }
+        guard let url = URL(string: ApiConstants.userPath) else { return }
         URLSession.shared.dataTask(with: url) { data, _, _ in
             guard let data = data else {
                 return
